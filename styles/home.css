@@ -1,0 +1,140 @@
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.topnav a {
+    float: left;
+    color: #efeeee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topnav a:hover {
+    background-color: rgb(218, 216, 216);
+    color: black;
+}
+
+.main_body {
+    background: linear-gradient( to right, rgb(214, 139, 58) 0%, rgb(221, 186, 70) 20%);
+}
+
+.mainimg {
+    padding-top: 20px;
+    height: 500px;
+    width: 600px;
+    padding-left: 150px;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.348);
+}
+
+.main_div {
+    background-color: rgba(0, 0, 0, 0.962);
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.table_font {
+    color: aliceblue;
+    margin-left: 100px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1px;
+    width: 300px;
+}
+
+.omen_content {
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 300px;
+}
+
+.omen15_img {
+    padding-top: 100px;
+}
+
+.omen15_font {
+    width: 450px;
+    font-weight: 1200;
+    padding-top: 150px;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.add_cart {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.add_cart:before {
+    content: '';
+    background: linear-gradient(45deg, #e62626, #d76d16, #54e922, #18cada, #cb11df, #e9135e, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.add_cart:active {
+    color: #000
+}
+
+.add_cart:active:after {
+    background: transparent;
+}
+
+.add_cart:hover:before {
+    opacity: 1;
+}
+
+.add_cart:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
